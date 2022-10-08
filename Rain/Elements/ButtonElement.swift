@@ -26,22 +26,22 @@ struct ButtonElement: View {
             Image(buttonCase.rawValue)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 60, height: 60)
+                .frame(width: 50, height: 50)
                 .brightness(press ? 0.3 : 0.7)
             
             Image(buttonCase.rawValue)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 60, height: 60)
+                .frame(width: 50, height: 50)
                 .brightness(0.3)
                 .clipShape(
                     Rectangle()
-                        .offset(y: tap ? 0 : 60)
+                        .offset(y: tap ? 0 : 50)
                 )
                 .opacity(press ? 0 : 1)
             
         }
-        .frame(width: 120, height: 120)
+        .frame(width: 110, height: 110)
         .background(
             ZStack {
                 LinearGradient(
